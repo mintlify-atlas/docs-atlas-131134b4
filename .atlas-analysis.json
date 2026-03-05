@@ -1,0 +1,223 @@
+{
+  "projectType": "general",
+  "projectName": "Awesome Selfhosted",
+  "projectDescription": "A comprehensive list of Free Software network services and web applications which can be hosted on your own servers",
+  "theme": "almond",
+  "primaryColor": "#d4c354",
+  "lightColor": "#8cc657",
+  "darkColor": "#868783",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Introduction",
+            "pages": [
+              "index",
+              "what-is-selfhosting",
+              "how-to-use"
+            ]
+          },
+          {
+            "group": "Getting Started",
+            "pages": [
+              "getting-started/contributing",
+              "getting-started/license-guide"
+            ]
+          },
+          {
+            "group": "Communication & Collaboration",
+            "pages": [
+              "categories/communication/custom-systems",
+              "categories/communication/email-complete",
+              "categories/communication/email-mda",
+              "categories/communication/email-mta",
+              "categories/communication/email-mailing",
+              "categories/communication/email-webmail",
+              "categories/communication/irc",
+              "categories/communication/sip",
+              "categories/communication/social-forums",
+              "categories/communication/video-conferencing",
+              "categories/communication/xmpp-servers",
+              "categories/communication/xmpp-web",
+              "categories/groupware",
+              "categories/calendar-contacts"
+            ]
+          },
+          {
+            "group": "Content & Media",
+            "pages": [
+              "categories/content-management",
+              "categories/blogging-platforms",
+              "categories/wikis",
+              "categories/note-taking-editors",
+              "categories/media-management",
+              "categories/media-streaming-audio",
+              "categories/media-streaming-video",
+              "categories/media-streaming-multimedia",
+              "categories/photo-galleries"
+            ]
+          },
+          {
+            "group": "Business & Productivity",
+            "pages": [
+              "categories/office-suites",
+              "categories/crm",
+              "categories/e-commerce",
+              "categories/inventory-management",
+              "categories/resource-planning",
+              "categories/booking-scheduling",
+              "categories/task-management",
+              "categories/time-tracking",
+              "categories/ticketing",
+              "categories/hrm",
+              "categories/conference-management"
+            ]
+          },
+          {
+            "group": "Development Tools",
+            "pages": [
+              "categories/software-development",
+              "categories/software-dev-api",
+              "categories/software-dev-ci-cd",
+              "categories/software-dev-faas",
+              "categories/software-dev-feature-toggle",
+              "categories/software-dev-ide",
+              "categories/software-dev-localization",
+              "categories/software-dev-low-code",
+              "categories/software-dev-project-mgmt",
+              "categories/software-dev-testing",
+              "categories/static-site-generators"
+            ]
+          },
+          {
+            "group": "Data & Analytics",
+            "pages": [
+              "categories/analytics",
+              "categories/database-management",
+              "categories/monitoring",
+              "categories/search-engines"
+            ]
+          },
+          {
+            "group": "Files & Storage",
+            "pages": [
+              "categories/file-transfer-sync",
+              "categories/file-transfer-distributed",
+              "categories/file-transfer-object-storage",
+              "categories/file-transfer-p2p",
+              "categories/file-transfer-upload",
+              "categories/file-transfer-managers",
+              "categories/document-management",
+              "categories/document-ebooks",
+              "categories/document-ils",
+              "categories/document-repository",
+              "categories/archiving-preservation",
+              "categories/backup"
+            ]
+          },
+          {
+            "group": "Security & Privacy",
+            "pages": [
+              "categories/password-managers",
+              "categories/federated-identity",
+              "categories/identity-management",
+              "categories/proxy",
+              "categories/vpn",
+              "categories/dns"
+            ]
+          },
+          {
+            "group": "Utilities & Automation",
+            "pages": [
+              "categories/automation",
+              "categories/bookmarks-link-sharing",
+              "categories/pastebins",
+              "categories/url-shorteners",
+              "categories/polls-events",
+              "categories/network-utilities",
+              "categories/remote-access",
+              "categories/web-servers",
+              "categories/status-uptime"
+            ]
+          },
+          {
+            "group": "Specialized Applications",
+            "pages": [
+              "categories/ai-genai",
+              "categories/feed-readers",
+              "categories/games",
+              "categories/games-admin",
+              "categories/genealogy",
+              "categories/health-fitness",
+              "categories/iot",
+              "categories/knowledge-management",
+              "categories/learning-courses",
+              "categories/manufacturing",
+              "categories/maps-gps",
+              "categories/money-budgeting",
+              "categories/personal-dashboards",
+              "categories/recipe-management",
+              "categories/self-hosting-solutions",
+              "categories/video-surveillance",
+              "categories/csa"
+            ]
+          },
+          {
+            "group": "Miscellaneous",
+            "pages": [
+              "categories/miscellaneous"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Resources",
+        "groups": [
+          {
+            "group": "Reference",
+            "pages": [
+              "resources/licenses",
+              "resources/anti-features",
+              "resources/external-links",
+              "resources/communities"
+            ]
+          },
+          {
+            "group": "Non-Free Software",
+            "pages": [
+              "non-free/overview",
+              "non-free/categories"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Comprehensive catalog of 1000+ self-hosted applications",
+    "Organized into 80+ specialized categories",
+    "Includes license information, demos, and source code links",
+    "Focus on free software and privacy-respecting alternatives",
+    "Active community with 277K+ GitHub stars",
+    "Detailed technology stack information for each project",
+    "Curated non-free software section",
+    "Extensive external resources and community links"
+  ],
+  "publicApiSurface": [
+    "Analytics Tools",
+    "Communication Systems (Email, Chat, Video)",
+    "Content Management Systems",
+    "Database Management",
+    "File Storage and Synchronization",
+    "Automation and Workflow Tools",
+    "Development Tools (CI/CD, API Management, Project Management)",
+    "Media Streaming (Audio, Video, Multimedia)",
+    "Business Applications (CRM, E-commerce, Inventory)",
+    "Security Tools (Password Managers, VPN, Proxy)",
+    "Specialized Apps (AI, IoT, Gaming, Health)",
+    "Knowledge Management (Wikis, Note-taking, Learning)",
+    "Monitoring and Network Utilities"
+  ]
+}
