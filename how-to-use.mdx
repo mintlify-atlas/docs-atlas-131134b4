@@ -1,0 +1,331 @@
+---
+title: How to Use This Catalog
+description: A comprehensive guide to navigating, evaluating, and deploying applications from the Awesome-Selfhosted catalog
+---
+
+# How to Use This Catalog
+
+This guide will help you effectively navigate the Awesome-Selfhosted catalog, evaluate applications, and deploy them successfully.
+
+## Understanding the Catalog Structure
+
+The catalog organizes thousands of self-hosted applications into logical categories to help you find what you need.
+
+### Browse by Category
+
+Applications are organized into categories based on their primary function:
+
+<CardGroup cols={3}>
+  <Card title="Communication" icon="comments">
+    Email, chat, forums, video conferencing, and social networks
+  </Card>
+  <Card title="Media" icon="photo-film">
+    Streaming, galleries, photo management, and music servers
+  </Card>
+  <Card title="Productivity" icon="list-check">
+    Calendars, task management, note-taking, and collaboration
+  </Card>
+  <Card title="File Management" icon="folder">
+    Cloud storage, file sync, and document management
+  </Card>
+  <Card title="Development" icon="code">
+    Version control, CI/CD, project management, and testing
+  </Card>
+  <Card title="Analytics" icon="chart-line">
+    Web analytics, monitoring, and data visualization
+  </Card>
+</CardGroup>
+
+### Category Examples
+
+The catalog includes categories such as:
+
+- **Analytics**: Privacy-focused tools like Matomo, Plausible, and Umami
+- **Automation**: Workflow engines like Apache Airflow, Huginn, and n8n
+- **Backup**: Data protection solutions
+- **Blogging Platforms**: Ghost, WriteFreely, and more
+- **Bookmarks and Link Sharing**: Linkding, Shaarli, and LinkAce
+- **Communication Systems**: Matrix, Rocket.Chat, and Zulip
+- **Content Management Systems**: WordPress alternatives and wiki platforms
+- **Database Management**: Admin interfaces and query tools
+- **E-commerce**: Online store platforms
+- **Games**: Game servers and control panels
+- **Password Managers**: Vaultwarden and KeeWeb
+- **Search Engines**: Self-hosted search solutions
+- **And 80+ more categories**
+
+<Note>
+Each category includes a brief description and links to related categories to help you discover similar or complementary applications.
+</Note>
+
+## Reading Application Entries
+
+Each application listing provides essential information to help you make informed decisions.
+
+### Entry Format
+
+A typical entry looks like this:
+
+```
+- [Application Name](website-url) - Brief description of what the application does. 
+  ([Demo](demo-url), [Source Code](source-url), [Clients](clients-url)) 
+  `License` `Technology/Platform`
+```
+
+### What Each Component Means
+
+<AccordionGroup>
+  <Accordion title="Application Name and Website">
+    The clickable application name links to the official website or documentation where you can learn more about the project, its features, and how to get started.
+  </Accordion>
+  
+  <Accordion title="Description">
+    A concise explanation of what the application does and its primary use case. Some entries also mention alternatives (e.g., "alternative to Google Analytics").
+  </Accordion>
+  
+  <Accordion title="Demo Link">
+    Try before you deploy! Demo links let you explore the application's interface and features without installing anything. This is invaluable for evaluating if the software meets your needs.
+  </Accordion>
+  
+  <Accordion title="Source Code Link">
+    Direct link to the source code repository (usually GitHub, GitLab, or Codeberg). Use this to:
+    - Review code quality and security
+    - Check development activity and community health
+    - Read installation documentation
+    - Report issues or contribute
+  </Accordion>
+  
+  <Accordion title="Client Links">
+    For applications with mobile apps, desktop clients, or browser extensions, this link points to available client software.
+  </Accordion>
+  
+  <Accordion title="License">
+    The software license (e.g., MIT, GPL-3.0, Apache-2.0). All applications in the main list are Free Software. See the [List of Licenses](/licenses) section for explanations of each license type.
+  </Accordion>
+  
+  <Accordion title="Technology/Platform">
+    Indicates the programming language and deployment method (e.g., `Python/Docker`, `Nodejs`, `PHP/deb`). This helps you:
+    - Understand technical requirements
+    - Assess if you have the skills to maintain it
+    - Determine deployment complexity
+  </Accordion>
+</AccordionGroup>
+
+### Technology Tags Explained
+
+Common technology indicators:
+
+- **Docker**: Available as a Docker container (easiest deployment)
+- **K8S**: Kubernetes-ready for orchestrated deployments
+- **deb**: Debian/Ubuntu package available
+- **Language names** (Python, Nodejs, Go, PHP, etc.): Primary programming language
+
+<Note>
+Docker deployments are generally the easiest for beginners. Look for `Docker` in the technology tag when starting out.
+</Note>
+
+## Understanding the Anti-Features Marker
+
+### The ⚠ Symbol
+
+Some applications are marked with a warning symbol: **⚠**
+
+**What it means**: The application depends on a proprietary service outside the user's control.
+
+### Why This Matters
+
+The philosophy of self-hosting emphasizes independence and control. Applications marked with ⚠ may:
+
+- Require API keys from third-party services
+- Depend on external cloud platforms for core functionality
+- Send data to proprietary services
+- Require accounts with commercial providers
+
+### Example Applications with Anti-Features
+
+- **Daily Stars Explorer** ⚠: Depends on GitHub's API
+- **DavMail** ⚠: Interfaces with proprietary Exchange servers
+- **Ganymede** ⚠: Relies on Twitch's platform
+- **LazyLibrarian** ⚠: Depends on proprietary book databases
+
+<Warning>
+Applications with ⚠ aren't necessarily bad choices - they just have external dependencies. Evaluate whether these dependencies align with your self-hosting goals.
+</Warning>
+
+### Making Informed Choices
+
+When you see ⚠:
+
+1. **Read the documentation**: Understand what external services are required
+2. **Assess the dependency**: Is the external service critical or optional?
+3. **Consider alternatives**: Are there unmarked alternatives in the same category?
+4. **Evaluate your needs**: Does the functionality justify the external dependency?
+
+## Evaluating Applications
+
+### Before You Deploy
+
+Use these criteria to evaluate applications:
+
+<Steps>
+  <Step title="Try the Demo">
+    If available, test the demo to see if the interface and features meet your needs. This saves time compared to installing and then discovering it's not right for you.
+  </Step>
+  
+  <Step title="Review the Source Code">
+    Visit the repository to check:
+    - **Recent commits**: Is the project actively maintained?
+    - **Issue count**: Are there many unresolved bugs?
+    - **Community activity**: Are maintainers responsive?
+    - **Documentation quality**: Is setup well-documented?
+    - **Stars/forks**: Is there community interest?
+  </Step>
+  
+  <Step title="Check Technical Requirements">
+    Ensure you can meet the requirements:
+    - Do you have the necessary hardware resources?
+    - Can you work with the deployment method (Docker, manual install)?
+    - Do you have experience with the technology stack?
+  </Step>
+  
+  <Step title="Read the License">
+    Understand the license terms, especially if you plan to modify or redistribute the software.
+  </Step>
+  
+  <Step title="Assess Dependencies">
+    Check for the ⚠ marker and evaluate external dependencies against your self-hosting goals.
+  </Step>
+  
+  <Step title="Look for Client Support">
+    If you need mobile or desktop access, verify that clients are available for your platforms.
+  </Step>
+</Steps>
+
+### Comparing Alternatives
+
+Many categories have multiple applications serving similar purposes. When comparing:
+
+- **Features**: List must-have features and compare coverage
+- **Ease of use**: Consider both user interface and deployment complexity
+- **Resource usage**: Check memory and CPU requirements
+- **Maintenance burden**: How often does it need updates?
+- **Community size**: Larger communities often mean better support
+- **Documentation**: Good docs make deployment and troubleshooting easier
+
+## Deployment Guide
+
+### Docker Deployments (Recommended for Beginners)
+
+Most modern self-hosted applications offer Docker containers:
+
+```bash
+# Generic example
+docker pull application-name
+docker run -d -p 8080:80 application-name
+```
+
+Advantages:
+- Consistent environment across different systems
+- Easy updates and rollbacks
+- Isolation from other applications
+- Simplified dependency management
+
+### Docker Compose
+
+For applications with multiple services:
+
+```yaml
+version: '3'
+services:
+  app:
+    image: application-name
+    ports:
+      - "8080:80"
+    volumes:
+      - ./data:/data
+```
+
+### Manual Installation
+
+Some applications require traditional installation:
+
+1. Follow the official documentation carefully
+2. Install required dependencies
+3. Configure databases and environment variables
+4. Set up reverse proxies if needed
+5. Configure SSL/TLS certificates
+
+<Warning>
+Always read the official installation documentation. The catalog provides an overview, but detailed setup instructions are in each project's repository.
+</Warning>
+
+## Finding Help
+
+### Application-Specific Help
+
+1. **Official documentation**: Start with the project's docs
+2. **GitHub Issues**: Search existing issues or open a new one
+3. **Project forums/chat**: Many projects have Discord, Matrix, or Slack channels
+
+### General Self-Hosting Help
+
+Join the self-hosting community:
+
+- [/c/selfhosted on lemmy.world](https://lemmy.world/c/selfhosted)
+- [/r/selfhosted on Reddit](https://old.reddit.com/r/selfhosted/)
+- [Self-hosted Matrix Channel](https://matrix.to/#/#selfhosted:selfhosted.chat)
+- [/r/homelab on Reddit](https://old.reddit.com/r/homelab/)
+
+## Additional Resources
+
+<CardGroup cols={2}>
+  <Card title="Contributing Guidelines" icon="code-pull-request" href="https://github.com/awesome-selfhosted/awesome-selfhosted-data/blob/master/CONTRIBUTING.md">
+    Help improve the catalog by adding new applications or updating existing entries
+  </Card>
+  <Card title="Awesome Sysadmin" icon="server" href="https://github.com/awesome-foss/awesome-sysadmin">
+    Complementary list of system administration resources
+  </Card>
+  <Card title="Privacy Resources" icon="user-shield" href="https://www.privacytools.io/">
+    Tools and knowledge to protect your privacy
+  </Card>
+  <Card title="Alternative Internet" icon="globe" href="https://redecentralize.github.io/alternative-internet/">
+    Decentralized alternatives to mainstream services
+  </Card>
+</CardGroup>
+
+## Quick Tips
+
+<Tip>
+**Start small**: Begin with one application, learn the basics of self-hosting, then gradually expand.
+</Tip>
+
+<Tip>
+**Use Docker**: It simplifies deployment and maintenance significantly.
+</Tip>
+
+<Tip>
+**Test with demos**: Save time by trying demos before deploying.
+</Tip>
+
+<Tip>
+**Check activity**: Choose actively maintained projects to ensure continued support and security updates.
+</Tip>
+
+<Tip>
+**Backup everything**: Always maintain backups of your self-hosted data and configurations.
+</Tip>
+
+<Tip>
+**Security first**: Keep applications updated, use strong passwords, enable 2FA when available, and use SSL/TLS.
+</Tip>
+
+---
+
+<CardGroup cols={2}>
+  <Card title="Explore Applications" icon="magnifying-glass" href="/catalog">
+    Browse the complete catalog of self-hosted applications
+  </Card>
+  <Card title="What is Self-Hosting?" icon="book" href="/what-is-selfhosting">
+    Learn more about the philosophy and benefits of self-hosting
+  </Card>
+</CardGroup>

@@ -1,0 +1,81 @@
+---
+title: Anti-Features
+description: Understanding the anti-features warning symbol in awesome-selfhosted
+---
+
+The awesome-selfhosted project uses a warning symbol to identify software with certain characteristics that may conflict with the goals of self-hosting.
+
+## The Warning Symbol: ⚠
+
+<Warning>
+Software marked with **⚠** depends on a proprietary service outside the user's control.
+</Warning>
+
+## What This Means
+
+When you see the ⚠ symbol next to a project, it indicates that while the software itself may be self-hosted, it has dependencies on external proprietary services that are:
+
+- **Not under your control** - The service is operated by a third party
+- **Proprietary** - The service is closed-source or not freely available
+- **Required for functionality** - The software cannot function fully without this external service
+
+## Why This Matters for Self-Hosting
+
+The primary goal of self-hosting is to maintain control over your data, infrastructure, and digital services. When software depends on proprietary external services, it can:
+
+<AccordionGroup>
+
+<Accordion title="Compromise Privacy">
+Your data or metadata may be sent to third-party services, potentially exposing sensitive information to external parties.
+</Accordion>
+
+<Accordion title="Reduce Autonomy">
+You become dependent on external services that you don't control. If the service shuts down, changes pricing, or modifies terms of service, your self-hosted application may stop working.
+</Accordion>
+
+<Accordion title="Create Single Points of Failure">
+Even if your self-hosted instance is running perfectly, functionality can break if the external proprietary service experiences downtime or discontinuation.
+</Accordion>
+
+<Accordion title="Limit True Ownership">
+You don't fully own or control the complete software stack, which defeats part of the purpose of self-hosting.
+</Accordion>
+
+</AccordionGroup>
+
+## Common Examples
+
+Software might be flagged with ⚠ if it depends on:
+
+- **Push notification services** - Like Firebase Cloud Messaging or Apple Push Notification Service
+- **Map providers** - Proprietary mapping APIs (Google Maps, Mapbox) when no alternative exists
+- **Payment processors** - Third-party payment gateways that cannot be self-hosted
+- **Authentication services** - OAuth providers or identity services
+- **Media transcoders** - Cloud-based transcoding services
+- **AI/ML APIs** - Proprietary machine learning inference services
+
+## Making Informed Decisions
+
+The ⚠ symbol is informational, not prohibitive. It helps you:
+
+1. **Understand dependencies** - Know what external services are required
+2. **Evaluate trade-offs** - Decide if the functionality is worth the dependency
+3. **Plan for risks** - Consider what happens if the external service fails
+4. **Choose alternatives** - Look for fully self-hostable options if desired
+
+Some excellent software has unavoidable dependencies on external services. The warning simply ensures you're aware of these dependencies before committing to a solution.
+
+## Finding Fully Self-Contained Alternatives
+
+If you prefer software without external dependencies:
+
+- Browse projects without the ⚠ symbol
+- Check project documentation for self-hosted alternatives to external services
+- Look for projects with optional external integrations that can be disabled
+- Consider contributing to projects to help reduce external dependencies
+
+## Related Resources
+
+- [Privacy Tools](https://www.privacytools.io/) - Privacy-focused software recommendations
+- [PRISM Break](https://prism-break.org/) - Alternatives to proprietary software
+- [Libre Projects](https://libreprojects.net/) - Directory of freedom-respecting services

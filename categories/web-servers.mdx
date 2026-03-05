@@ -1,0 +1,183 @@
+---
+title: Web Servers
+description: Self-hosted web servers and reverse proxies
+---
+
+Web Servers and Reverse Proxies. A [web server](https://en.wikipedia.org/wiki/Web_server) is a piece of software and underlying hardware that accepts requests via [HTTP](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol) (the network protocol created to distribute web content) or its secure variant [HTTPS](https://en.wikipedia.org/wiki/HTTPS). A [Reverse Proxy](https://en.wikipedia.org/wiki/Reverse_proxy) is a proxy server that appears to any client to be an ordinary web server, but in reality merely acts as an intermediary that forwards requests to one or more ordinary web servers.
+
+**Related:** [Proxy](/categories/proxy)
+
+## Applications
+
+### Algernon
+
+Small self-contained pure-Go web server with Lua, Markdown, HTTP/2, QUIC, Redis and PostgreSQL support.
+
+- **Website:** https://algernon.roboticoverlords.org/
+- **Source Code:** https://github.com/xyproto/algernon
+- **License:** BSD-3-Clause
+- **Platform:** Go/Docker
+
+### Apache HTTP Server
+
+Secure, efficient and extensible server that provides HTTP services in sync with the current HTTP standards.
+
+- **Website:** https://httpd.apache.org/
+- **Source Code:** https://svn.apache.org/repos/asf/httpd/httpd/trunk/
+- **License:** Apache-2.0
+- **Platform:** C/deb/Docker
+
+### BunkerWeb
+
+Next-gen Web Application Firewall (WAF) that will protect your web services.
+
+- **Website:** https://www.bunkerweb.io
+- **Demo:** https://demo.bunkerweb.io
+- **Source Code:** https://github.com/bunkerity/bunkerweb
+- **License:** AGPL-3.0
+- **Platform:** deb/Docker/K8S/Python
+
+### Caddy
+
+Powerful, enterprise-ready, open source web server with automatic HTTPS.
+
+- **Website:** https://caddyserver.com/
+- **Source Code:** https://github.com/caddyserver/caddy
+- **License:** Apache-2.0
+- **Platform:** Go/deb/Docker
+
+### godoxy
+
+High-performance reverse proxy and container orchestrator for self-hosters.
+
+- **Website:** https://docs.godoxy.dev/
+- **Demo:** https://demo.godoxy.dev/
+- **Source Code:** https://github.com/yusing/godoxy
+- **License:** MIT
+- **Platform:** Docker/Go
+
+### HAProxy
+
+Very fast and reliable reverse-proxy offering high availability, load balancing, and proxying for TCP and HTTP-based applications.
+
+- **Website:** https://www.haproxy.org/
+- **Source Code:** https://git.haproxy.org/?p=haproxy.git;a=tree
+- **License:** GPL-2.0
+- **Platform:** C/deb/Docker
+
+### Jauth
+
+Lightweight SSL/TLS reverse proxy with authorization (via Telegram and SSH) for self-hosted apps.
+
+- **Source Code:** https://github.com/Jipok/Jauth
+- **License:** GPL-3.0
+- **Platform:** Go
+- **Note:** ⚠ Depends on a proprietary service outside the user's control
+
+### Lighttpd
+
+Secure, fast, compliant, and very flexible web server that has been optimized for high-performance environments.
+
+- **Website:** https://www.lighttpd.net/
+- **Source Code:** https://git.lighttpd.net/lighttpd/lighttpd1.4
+- **License:** BSD-3-Clause
+- **Platform:** C/deb/Docker
+
+### Nginx Proxy Manager
+
+Docker container for managing Nginx proxy hosts with a simple, powerful interface.
+
+- **Website:** https://nginxproxymanager.com/
+- **Source Code:** https://github.com/NginxProxyManager/nginx-proxy-manager
+- **License:** MIT
+- **Platform:** Docker
+
+### NGINX
+
+HTTP and reverse proxy server, mail proxy server, and generic TCP/UDP proxy server.
+
+- **Website:** https://nginx.org/en/
+- **Source Code:** https://github.com/nginx/nginx
+- **License:** BSD-2-Clause
+- **Platform:** C/deb/Docker
+
+### Pangolin
+
+Identity-aware tunneled reverse proxy with dashboard UI, access control, and WireGuard-based tunnels (alternative to Cloudflare Tunnel, Tailscale).
+
+- **Website:** https://digpangolin.com/
+- **Source Code:** https://github.com/fosrl/pangolin
+- **License:** AGPL-3.0
+- **Platform:** Docker
+
+### Pomerium
+
+Identity-aware reverse proxy, successor to now obsolete oauth_proxy. It inserts an OAuth step before proxying your request to the backend, so that you can safely expose your self-hosted websites to public Internet.
+
+- **Website:** https://www.pomerium.io
+- **Source Code:** https://github.com/pomerium/pomerium
+- **License:** Apache-2.0
+- **Platform:** Go/Docker
+
+### SafeLine
+
+Web application firewall / reverse proxy to protect your web apps from attacks and exploits.
+
+- **Website:** https://waf.chaitin.com/
+- **Demo:** https://demo.waf.chaitin.com/
+- **Source Code:** https://github.com/chaitin/SafeLine
+- **License:** GPL-3.0
+- **Platform:** Docker
+
+### Static Web Server
+
+Cross-platform, high-performance, and asynchronous web server for static file serving.
+
+- **Website:** https://static-web-server.net/
+- **Source Code:** https://github.com/static-web-server/static-web-server
+- **License:** Apache-2.0/MIT
+- **Platform:** Rust/Docker
+
+### SWAG (Secure Web Application Gateway)
+
+Nginx webserver and reverse proxy with PHP support, built-in Certbot (Let's Encrypt) client and fail2ban integration.
+
+- **Source Code:** https://github.com/linuxserver/docker-swag
+- **License:** GPL-3.0
+- **Platform:** Docker
+
+### Traefik
+
+HTTP reverse proxy and load balancer that makes deploying microservices easy.
+
+- **Website:** https://traefik.io/
+- **Source Code:** https://github.com/traefik/traefik
+- **License:** MIT
+- **Platform:** Go/Docker
+
+### UUSEC WAF
+
+Industry-leading high-performance, AI and semantic technology web application firewall and API security gateway (fork of nginx).
+
+- **Website:** https://uuwaf.uusec.com
+- **Source Code:** https://github.com/Safe3/uusec-waf
+- **License:** GPL-3.0
+- **Platform:** C/Lua/Docker
+
+### Vinyl Cache
+
+Web application accelerator/caching HTTP reverse proxy (formerly Varnish).
+
+- **Website:** https://vinyl-cache.org/
+- **Source Code:** https://code.vinyl-cache.org/vinyl-cache/vinyl-cache
+- **License:** BSD-2-Clause
+- **Platform:** Go/deb/Docker
+
+### Zoraxy
+
+General purpose HTTP reverse proxy and forwarding tool.
+
+- **Website:** https://zoraxy.aroz.org/
+- **Source Code:** https://github.com/tobychui/zoraxy
+- **License:** AGPL-3.0
+- **Platform:** Go/Docker

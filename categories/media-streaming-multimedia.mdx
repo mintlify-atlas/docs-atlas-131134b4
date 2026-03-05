@@ -1,0 +1,271 @@
+---
+title: Media Streaming - Multimedia
+description: Self-hosted multimedia streaming servers supporting both audio and video
+---
+
+# Media Streaming - Multimedia
+
+[Multimedia](https://en.wikipedia.org/wiki/Multimedia) streaming tools and software that handle both audio and video content.
+
+<Note>
+Related categories: [Media Streaming - Video](/categories/media-streaming-video), [Media Streaming - Audio](/categories/media-streaming-audio), [Media Management](/categories/media-management)
+</Note>
+
+## Featured Multimedia Platforms
+
+<CardGroup cols={2}>
+  <Card title="Jellyfin" icon="film" href="https://jellyfin.org">
+    Free, open-source media server with apps for all platforms
+  </Card>
+  <Card title="Kodi" icon="tv" href="https://kodi.tv/">
+    Powerful media center for organizing your collection
+  </Card>
+  <Card title="Kyoo" icon="play" href="https://github.com/zoriya/kyoo">
+    Modern media browser with anime support
+  </Card>
+  <Card title="Gerbera" icon="server" href="https://gerbera.io/">
+    UPnP Media Server for home streaming
+  </Card>
+</CardGroup>
+
+## All Multimedia Streaming Applications
+
+### Complete Media Servers
+
+**Jellyfin** - Media server for audio, video, books, comics, and photos with a sleek interface and robust transcoding capabilities. Clients available for all major platforms.
+- [Demo](https://demo.jellyfin.org/stable) | [Source Code](https://github.com/jellyfin/jellyfin)
+- License: `GPL-2.0`
+- Platform: `C#/deb/Docker`
+
+**Kodi** - Multimedia/Entertainment center, formerly known as XBMC. Runs on Android, BSD, Linux, macOS, iOS and Windows.
+- [Source Code](https://github.com/xbmc/xbmc)
+- License: `GPL-2.0`
+- Platform: `C++/deb`
+
+**Kyoo** - Innovative media browser designed for seamless streaming of anime, series and movies with dynamic transcoding and intelligent metadata.
+- [Demo](https://kyoo.zoriya.dev) | [Source Code](https://github.com/zoriya/kyoo)
+- License: `GPL-3.0`
+- Platform: `Docker`
+
+**Meelo** - Personal Music Server, designed for collectors and music maniacs.
+- [Source Code](https://github.com/Arthi-chaud/Meelo)
+- License: `GPL-3.0`
+- Platform: `Docker`
+
+### UPnP/DLNA Media Servers
+
+**Gerbera** - UPnP Media Server for streaming throughout your home network to UPnP compatible devices.
+- [Source Code](https://github.com/gerbera/gerbera)
+- License: `GPL-2.0`
+- Platform: `Docker/deb/C++`
+
+**Rygel** - UPnP AV MediaServer that allows you to share audio, video, and pictures. Supports MediaRenderer control via UPnP.
+- [Source Code](https://gitlab.gnome.org/GNOME/rygel/)
+- License: `LGPL-2.1`
+- Platform: `C`
+
+### Lightweight Alternatives
+
+**cmyflix** - Minimalist Plex/Jellyfin alternative to stream video.
+- [Source Code](https://github.com/farfalleflickan/cmyflix)
+- License: `AGPL-3.0`
+- Platform: `C/deb`
+
+### Streaming Infrastructure
+
+**Icecast 2** - Streaming audio/video server for creating an Internet radio station or privately running jukebox.
+- [Source Code](https://gitlab.xiph.org/xiph/icecast-server)
+- License: `GPL-2.0`
+- Platform: `C`
+
+**MediaMTX** - Ready-to-use real-time media server and proxy for video/audio streams over SRT, WebRTC, RTSP, RTMP, HLS, MPEG-TS, RTP.
+- [Source Code](https://github.com/bluenviron/mediamtx)
+- License: `MIT`
+- Platform: `Go/Docker`
+
+**MistServer** - Public domain streaming media server supporting RTMP, HLS, and more.
+- [Source Code](https://github.com/DDVTECH/mistserver)
+- License: `Unlicense`
+- Platform: `C++`
+
+**µStreamer** - Lightweight and very quick server to stream MJPEG video from any V4L2 device to the net.
+- [Source Code](https://github.com/pikvm/ustreamer)
+- License: `GPL-3.0`
+- Platform: `C/deb`
+
+### Specialized Platforms
+
+**ClipBucket** - Video sharing website (YouTube/Netflix Clone) in minutes.
+- [Demo](https://demo.clipbucket.oxygenz.fr/) | [Source Code](https://github.com/MacWarrior/clipbucket-v5)
+- License: `AAL`
+- Platform: `Docker/PHP`
+
+**Karaoke Eternal** - Host karaoke parties where everyone can queue songs from their phone. Browser-based player with MP3+G, MP4 support.
+- [Source Code](https://github.com/bhj/KaraokeEternal)
+- License: `ISC`
+- Platform: `Docker/Nodejs`
+
+**NymphCast** - Turn Linux hardware into an audio and video source for TV or speakers (Chromecast alternative).
+- [Source Code](https://github.com/MayaPosch/NymphCast)
+- License: `BSD-3-Clause`
+- Platform: `C++`
+
+**Stash** - Web-based library organizer and player for adult media with auto-tagging and metadata scraping.
+- [Source Code](https://github.com/stashapp/stash)
+- License: `AGPL-3.0`
+- Platform: `Docker/Go`
+
+**üWave** ⚠ - Self-hosted collaborative listening platform. Users take turns playing media from YouTube, SoundCloud, etc.
+- [Demo](https://wlk.yt/) | [Source Code](https://github.com/u-wave)
+- License: `MIT`
+- Platform: `Nodejs`
+
+## Jellyfin vs Plex vs Emby
+
+<Tabs>
+  <Tab title="Jellyfin">
+    **Pros:**
+    - Completely free and open source
+    - No phone-home or tracking
+    - Active development community
+    - No premium features locked behind paywall
+    
+    **Cons:**
+    - Fewer third-party apps than Plex
+    - Some features still maturing
+    
+    **Best For:** Privacy-conscious users, self-hosters who want full control
+  </Tab>
+  
+  <Tab title="Plex">
+    **Pros:**
+    - Most polished interface
+    - Extensive client support
+    - Easy sharing with friends
+    - Strong metadata fetching
+    
+    **Cons:**
+    - Requires online account
+    - Some features require Plex Pass
+    - Not fully open source
+    
+    **Best For:** Users wanting the easiest experience with best app support
+    
+    **Note:** Not included in awesome-selfhosted due to proprietary elements
+  </Tab>
+  
+  <Tab title="Emby">
+    **Pros:**
+    - Good performance
+    - Strong plugin ecosystem
+    - Live TV support
+    
+    **Cons:**
+    - Premium features locked behind Emby Premiere
+    - Not fully open source
+    
+    **Best For:** Users who want middle ground between Plex and Jellyfin
+    
+    **Note:** Not included in awesome-selfhosted due to proprietary elements
+  </Tab>
+</Tabs>
+
+## Recommended Setup
+
+<Steps>
+  <Step title="Choose Your Server">
+    - **Jellyfin**: Best all-around FOSS choice
+    - **Kodi**: For local playback and home theater
+    - **Gerbera**: For UPnP/DLNA networks
+  </Step>
+  
+  <Step title="Organize Media">
+    ```
+    /media/
+      /movies/
+        /Movie Name (Year)/
+          Movie Name (Year).mkv
+      /tv/
+        /Show Name/
+          /Season 01/
+            Show Name - S01E01.mkv
+      /music/
+        /Artist/
+          /Album/
+    ```
+  </Step>
+  
+  <Step title="Configure Transcoding">
+    Enable hardware acceleration if available:
+    - Intel Quick Sync
+    - NVIDIA NVENC
+    - AMD AMF
+    - VA-API (Linux)
+  </Step>
+  
+  <Step title="Install Clients">
+    - **Jellyfin**: Apps for iOS, Android, Roku, Fire TV, Android TV
+    - **Kodi**: Available on most platforms as standalone
+    - **Web**: All servers include web interfaces
+  </Step>
+</Steps>
+
+## Protocol Support
+
+### Streaming Protocols
+- **HLS** (HTTP Live Streaming): Most compatible, supported by Jellyfin, Kyoo
+- **RTMP**: Traditional streaming, supported by Icecast, MediaMTX
+- **RTSP**: IP camera standard, supported by MediaMTX
+- **WebRTC**: Low latency, supported by MediaMTX
+- **UPnP/DLNA**: Home network standard, supported by Gerbera, Rygel
+
+### Media Formats
+Most servers support:
+- **Video**: MP4, MKV, AVI, WebM, MOV
+- **Audio**: MP3, FLAC, AAC, OGG, OPUS
+- **Subtitles**: SRT, ASS, SSA, VTT
+
+## Performance Tips
+
+<AccordionGroup>
+  <Accordion title="Hardware Acceleration">
+    Enable GPU transcoding to reduce CPU load:
+    - **Jellyfin**: Configure in Dashboard > Playback
+    - **Requires**: Compatible GPU and drivers
+    - **Benefit**: 5-10x faster transcoding
+  </Accordion>
+  
+  <Accordion title="Direct Play vs Transcode">
+    **Direct Play**: Stream original file (fast, no CPU usage)
+    - Requires client support for codec
+    - Best quality, lowest server load
+    
+    **Transcoding**: Convert on-the-fly (slower, high CPU)
+    - Needed for incompatible codecs
+    - Required for bandwidth limiting
+  </Accordion>
+  
+  <Accordion title="Storage Optimization">
+    - Use efficient codecs (H.265/HEVC for video)
+    - Consider SSD for server database
+    - Keep media on large HDD storage
+    - Enable automatic library scanning
+  </Accordion>
+</AccordionGroup>
+
+## Network Configuration
+
+<Warning>
+**Remote Access Security**
+
+When exposing your media server to the internet:
+- Use HTTPS with valid certificates
+- Implement strong authentication
+- Consider using VPN instead of direct exposure
+- Use reverse proxy (Nginx, Caddy) for additional security
+- Enable fail2ban or similar brute-force protection
+</Warning>
+
+<Tip>
+For family sharing, Jellyfin's user management with separate libraries per user is excellent. Each user can have their own watch history and preferences.
+</Tip>

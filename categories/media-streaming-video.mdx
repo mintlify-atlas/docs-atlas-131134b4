@@ -1,0 +1,236 @@
+---
+title: Media Streaming - Video
+description: Self-hosted video streaming servers and platforms
+---
+
+# Media Streaming - Video
+
+[Video](https://en.wikipedia.org/wiki/Video) streaming tools and software for hosting and streaming video content.
+
+<Note>
+Related categories: Video Surveillance, [Media Streaming - Multimedia](/categories/media-streaming-multimedia), [Photo Galleries](/categories/photo-galleries), [Media Management](/categories/media-management)
+</Note>
+
+## Featured Video Streaming Platforms
+
+<CardGroup cols={2}>
+  <Card title="PeerTube" icon="video" href="https://joinpeertube.org/">
+    Decentralized video platform using P2P in the browser
+  </Card>
+  <Card title="Owncast" icon="broadcast-tower" href="https://owncast.online/">
+    Live streaming server similar to Twitch
+  </Card>
+  <Card title="Invidious" icon="youtube" href="https://github.com/iv-org/invidious">
+    Alternative YouTube front-end
+  </Card>
+  <Card title="MediaCMS" icon="camera" href="https://mediacms.io">
+    Modern video and media CMS
+  </Card>
+</CardGroup>
+
+## All Video Streaming Applications
+
+### Live Streaming Platforms
+
+**Owncast** - Decentralized single-user live video streaming and chat server for running your own live streams.
+- [Source Code](https://github.com/owncast/owncast)
+- License: `MIT`
+- Platform: `Go`
+
+**OvenMediaEngine** - Streaming Server with Sub-Second Latency.
+- [Demo](https://demo.ovenplayer.com) | [Source Code](https://github.com/OvenMediaLabs/OvenMediaEngine)
+- License: `AGPL-3.0`
+- Platform: `C++/Docker`
+
+**Restreamer** - Access H.264 real-time video streaming on your website without a streaming provider.
+- [Source Code](https://github.com/datarhei/restreamer)
+- License: `Apache-2.0`
+- Platform: `Nodejs/Docker`
+
+**SRS** - Simple, high efficiency and real-time video server, supports RTMP, WebRTC, HLS, HTTP-FLV and SRT.
+- [Source Code](https://github.com/ossrs/srs)
+- License: `MIT`
+- Platform: `Docker/C++`
+
+### Video Sharing Platforms
+
+**MediaCMS** - Modern, fully featured open source video and media CMS, written in Python/Django/React.
+- [Source Code](https://github.com/mediacms-io/mediacms)
+- License: `AGPL-3.0`
+- Platform: `Python/Docker`
+
+**PeerTube** - Decentralized video streaming platform using P2P (BitTorrent) directly in the web browser.
+- [Source Code](https://github.com/Chocobozzz/PeerTube)
+- License: `AGPL-3.0`
+- Platform: `Nodejs`
+
+**Tube** - Youtube-like video sharing app with automatic transcoding to MP4 H.265 AAC.
+- [Demo](https://tube.mills.io) | [Source Code](https://git.mills.io/prologic/tube)
+- License: `MIT`
+- Platform: `Go`
+
+### Video Watch Together & Sync
+
+**CyTube** - Synchronize media, chat, and more for an arbitrary number of channels.
+- [Demo](https://cytu.be) | [Source Code](https://github.com/calzoneman/sync)
+- License: `MIT`
+- Platform: `Nodejs`
+
+**SyncTube** - Lightweight and very simple to setup CyTube alternative to watch videos with friends and chat.
+- [Source Code](https://github.com/RblSb/SyncTube)
+- License: `MIT`
+- Platform: `Nodejs/Haxe`
+
+### Video Archiving & Download
+
+**Tube Archivist** ⚠ - Organize, search, and enjoy your YouTube collection. Subscribe, download, and track viewed content.
+- [Source Code](https://github.com/tubearchivist/tubearchivist)
+- License: `GPL-3.0`
+- Platform: `Docker`
+
+### Alternative Frontends
+
+**Invidious** ⚠ - Alternative YouTube front-end.
+- [Demo](https://docs.invidious.io/instances/) | [Source Code](https://github.com/iv-org/invidious)
+- License: `AGPL-3.0`
+- Platform: `Docker/Crystal`
+
+### Torrent Streaming
+
+**Rapidbay** - Videostreaming service/torrent client that allows searching and playing videos from torrents in the browser or from a Chromecast/AppleTV/Smart TV.
+- [Source Code](https://github.com/hauxir/rapidbay/)
+- License: `MIT`
+- Platform: `Python/Docker`
+
+### Media Players
+
+**VideoLAN Client (VLC)** - Cross-platform multimedia player client and server supporting most multimedia files as well as DVDs, Audio CDs, VCDs, and various streaming protocols.
+- [Source Code](https://code.videolan.org/videolan/vlc)
+- License: `GPL-2.0`
+- Platform: `C/deb`
+
+## Streaming Protocols Supported
+
+### Common Protocols
+- **RTMP**: Real-Time Messaging Protocol (traditional streaming)
+- **HLS**: HTTP Live Streaming (Apple standard, widely supported)
+- **DASH**: Dynamic Adaptive Streaming over HTTP
+- **WebRTC**: Real-time communication for browsers
+- **SRT**: Secure Reliable Transport
+
+### Protocol Recommendations
+
+<AccordionGroup>
+  <Accordion title="For Low Latency Streaming">
+    **Best Choice**: WebRTC, SRT
+    
+    **Servers**: OvenMediaEngine, SRS, Owncast (WebRTC support)
+    
+    Sub-second latency for interactive streaming.
+  </Accordion>
+  
+  <Accordion title="For Maximum Compatibility">
+    **Best Choice**: HLS
+    
+    **Servers**: Most modern servers support HLS
+    
+    Works on all modern browsers and devices.
+  </Accordion>
+  
+  <Accordion title="For Traditional Broadcasting">
+    **Best Choice**: RTMP
+    
+    **Servers**: Restreamer, SRS, Owncast
+    
+    Compatible with OBS Studio and other broadcasting software.
+  </Accordion>
+</AccordionGroup>
+
+## Use Case Recommendations
+
+<CardGroup cols={2}>
+  <Card title="Personal Live Streaming" icon="user">
+    **Owncast**
+    
+    Easy setup, Twitch-like interface, built-in chat
+  </Card>
+  
+  <Card title="Video Hosting Platform" icon="server">
+    **PeerTube** or **MediaCMS**
+    
+    Full-featured with social features
+  </Card>
+  
+  <Card title="Watch Parties" icon="users">
+    **CyTube** or **SyncTube**
+    
+    Synchronized viewing with chat
+  </Card>
+  
+  <Card title="YouTube Alternative" icon="youtube">
+    **Invidious** (frontend)
+    
+    **Tube Archivist** (archive)
+  </Card>
+</CardGroup>
+
+## Broadcasting with OBS Studio
+
+Most live streaming servers support OBS Studio:
+
+<Steps>
+  <Step title="Install OBS Studio">
+    Download from [obsproject.com](https://obsproject.com/)
+  </Step>
+  
+  <Step title="Configure Stream Settings">
+    In OBS, go to Settings > Stream:
+    - Service: Custom
+    - Server: `rtmp://your-server:1935/live`
+    - Stream Key: (your stream key)
+  </Step>
+  
+  <Step title="Start Streaming">
+    Click "Start Streaming" in OBS
+  </Step>
+  
+  <Step title="View Your Stream">
+    Access your stream via the server's web interface
+  </Step>
+</Steps>
+
+## Performance Considerations
+
+<Warning>
+**Transcoding Requirements**
+
+Video transcoding is CPU/GPU intensive. Consider:
+- Hardware acceleration (NVIDIA NVENC, Intel Quick Sync, AMD VCE)
+- Multiple quality levels require more resources
+- Live transcoding needs powerful hardware
+</Warning>
+
+<Tip>
+For personal live streaming with limited resources, use Owncast. It's optimized for single-user streaming and includes built-in transcoding with hardware acceleration support.
+</Tip>
+
+## Storage & Bandwidth
+
+### Video Storage
+- **HD (1080p)**: ~3-5 GB per hour
+- **4K**: ~15-20 GB per hour
+- Plan storage accordingly for archives
+
+### Bandwidth Requirements
+- **HD streaming**: 5-8 Mbps upload
+- **Multiple viewers**: Consider CDN or P2P (PeerTube)
+- **Recording + Streaming**: Double the bandwidth
+
+## Integration with Media Servers
+
+Many video streaming platforms integrate with:
+- **Jellyfin**: Via plugins or direct file access
+- **Plex**: Limited support, mainly via files
+- **Emby**: Similar to Plex
+
+For a complete media solution, combine with multimedia streaming servers from the [Media Streaming - Multimedia](/categories/media-streaming-multimedia) category.

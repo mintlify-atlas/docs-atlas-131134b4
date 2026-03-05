@@ -1,122 +1,215 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Awesome Selfhosted",
+  "theme": "almond",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#d4c354",
+    "light": "#8cc657",
+    "dark": "#868783"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "https://media.brand.dev/90b2f582-986d-47b7-8090-2ac49abb97e2.png",
+  "logo": {
+    "light": "https://media.brand.dev/90b2f582-986d-47b7-8090-2ac49abb97e2.png",
+    "dark": "https://media.brand.dev/90b2f582-986d-47b7-8090-2ac49abb97e2.png"
+  },
+  "navbar": {
+    "primary": {
+      "type": "github",
+      "href": "https://github.com/awesome-selfhosted/awesome-selfhosted"
+    }
+  },
+  "footer": {
+    "socials": {
+      "github": "https://github.com/awesome-selfhosted/awesome-selfhosted"
+    }
+  },
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Documentation",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Introduction",
             "pages": [
               "index",
-              "quickstart",
-              "development"
+              "what-is-selfhosting",
+              "how-to-use"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Getting Started",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "getting-started/contributing",
+              "getting-started/license-guide"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Communication & Collaboration",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "categories/communication/custom-systems",
+              "categories/communication/email-complete",
+              "categories/communication/email-mda",
+              "categories/communication/email-mta",
+              "categories/communication/email-mailing",
+              "categories/communication/email-webmail",
+              "categories/communication/irc",
+              "categories/communication/sip",
+              "categories/communication/social-forums",
+              "categories/communication/video-conferencing",
+              "categories/communication/xmpp-servers",
+              "categories/communication/xmpp-web",
+              "categories/groupware",
+              "categories/calendar-contacts"
             ]
           },
           {
-            "group": "AI tools",
+            "group": "Content & Media",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "categories/content-management",
+              "categories/blogging-platforms",
+              "categories/wikis",
+              "categories/note-taking-editors",
+              "categories/media-management",
+              "categories/media-streaming-audio",
+              "categories/media-streaming-video",
+              "categories/media-streaming-multimedia",
+              "categories/photo-galleries"
+            ]
+          },
+          {
+            "group": "Business & Productivity",
+            "pages": [
+              "categories/office-suites",
+              "categories/crm",
+              "categories/e-commerce",
+              "categories/inventory-management",
+              "categories/resource-planning",
+              "categories/booking-scheduling",
+              "categories/task-management",
+              "categories/time-tracking",
+              "categories/ticketing",
+              "categories/hrm",
+              "categories/conference-management"
+            ]
+          },
+          {
+            "group": "Development Tools",
+            "pages": [
+              "categories/software-development",
+              "categories/software-dev-api",
+              "categories/software-dev-ci-cd",
+              "categories/software-dev-faas",
+              "categories/software-dev-feature-toggle",
+              "categories/software-dev-ide",
+              "categories/software-dev-localization",
+              "categories/software-dev-low-code",
+              "categories/software-dev-project-mgmt",
+              "categories/software-dev-testing",
+              "categories/static-site-generators"
+            ]
+          },
+          {
+            "group": "Data & Analytics",
+            "pages": [
+              "categories/analytics",
+              "categories/database-management",
+              "categories/monitoring",
+              "categories/search-engines"
+            ]
+          },
+          {
+            "group": "Files & Storage",
+            "pages": [
+              "categories/file-transfer-sync",
+              "categories/file-transfer-distributed",
+              "categories/file-transfer-object-storage",
+              "categories/file-transfer-p2p",
+              "categories/file-transfer-upload",
+              "categories/file-transfer-managers",
+              "categories/document-management",
+              "categories/document-ebooks",
+              "categories/document-ils",
+              "categories/document-repository",
+              "categories/archiving-preservation",
+              "categories/backup"
+            ]
+          },
+          {
+            "group": "Security & Privacy",
+            "pages": [
+              "categories/password-managers",
+              "categories/federated-identity",
+              "categories/identity-management",
+              "categories/proxy",
+              "categories/vpn",
+              "categories/dns"
+            ]
+          },
+          {
+            "group": "Utilities & Automation",
+            "pages": [
+              "categories/automation",
+              "categories/bookmarks-link-sharing",
+              "categories/pastebins",
+              "categories/url-shorteners",
+              "categories/polls-events",
+              "categories/network-utilities",
+              "categories/remote-access",
+              "categories/web-servers",
+              "categories/status-uptime"
+            ]
+          },
+          {
+            "group": "Specialized Applications",
+            "pages": [
+              "categories/ai-genai",
+              "categories/feed-readers",
+              "categories/games",
+              "categories/games-admin",
+              "categories/genealogy",
+              "categories/health-fitness",
+              "categories/iot",
+              "categories/knowledge-management",
+              "categories/learning-courses",
+              "categories/manufacturing",
+              "categories/maps-gps",
+              "categories/money-budgeting",
+              "categories/personal-dashboards",
+              "categories/recipe-management",
+              "categories/self-hosting-solutions",
+              "categories/video-surveillance",
+              "categories/csa"
+            ]
+          },
+          {
+            "group": "Miscellaneous",
+            "pages": [
+              "categories/miscellaneous"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "Resources",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Reference",
             "pages": [
-              "api-reference/introduction"
+              "resources/licenses",
+              "resources/anti-features",
+              "resources/external-links",
+              "resources/communities"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Non-Free Software",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "non-free/overview",
+              "non-free/categories"
             ]
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
-  },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+    ]
   }
 }

@@ -1,0 +1,130 @@
+---
+title: Contributing
+description: Learn how to contribute to the Awesome-Selfhosted project by adding new software, improving existing entries, and following our submission guidelines.
+---
+
+## Contributing Guidelines
+
+Thank you for your interest in contributing to Awesome-Selfhosted! This project thrives on community contributions, and we welcome submissions of new self-hosted software, improvements to existing entries, and other enhancements.
+
+<Note>
+Before submitting, please review the full contributing guidelines in the [CONTRIBUTING.md](https://github.com/awesome-selfhosted/awesome-selfhosted-data/blob/master/CONTRIBUTING.md) file.
+</Note>
+
+## How to Add New Software
+
+When adding new self-hosted software to the list, please ensure your submission meets the following criteria:
+
+### Requirements
+
+1. **Free and Open Source Software (FOSS)**: The software must be Free Software. Non-free software should be submitted to the [Non-Free list](https://github.com/awesome-selfhosted/awesome-selfhosted/blob/master/non-free.md).
+
+2. **Self-Hostable**: The software must be able to be hosted and managed on your own server(s), not dependent on proprietary SaaS providers.
+
+3. **Network Services or Web Applications**: The software should be a [network service](https://en.wikipedia.org/wiki/Network_service) or [web application](https://en.wikipedia.org/wiki/Web_application).
+
+4. **Active Maintenance**: Projects should be actively maintained. Unmaintained projects may be flagged or removed.
+
+### Submission Standards
+
+Each entry in the list follows a specific format:
+
+```markdown
+- [Software Name](https://software-website.com/) - Brief description of what the software does. ([Demo](https://demo.url), [Source Code](https://github.com/user/repo)) `License` `Language/Platform`
+```
+
+<Accordion title="Entry Format Details">
+  - **Name and Website**: Link to the official website or project homepage
+  - **Description**: A clear, concise description of the software's purpose and features
+  - **Demo Link** (optional): Link to a live demo instance
+  - **Source Code**: Link to the source code repository (required)
+  - **License**: SPDX license identifier (see [License Guide](/getting-started/license-guide))
+  - **Platform**: Technology stack (e.g., `Docker`, `Nodejs`, `Python`, `PHP`, `Go`)
+</Accordion>
+
+### Anti-Features
+
+Software that depends on proprietary services outside the user's control should be marked with the `⚠` warning symbol:
+
+```markdown
+- [Software Name](https://example.com) `⚠` - Description here. `License` `Platform`
+```
+
+## Submission Process
+
+<Steps>
+  <Step title="Fork the Repository">
+    Fork the [awesome-selfhosted-data](https://github.com/awesome-selfhosted/awesome-selfhosted-data) repository on GitHub.
+  </Step>
+  
+  <Step title="Make Your Changes">
+    Add your entry in the appropriate category following the format above. Ensure entries are in alphabetical order within their category.
+  </Step>
+  
+  <Step title="Test Your Changes">
+    Verify that all links work correctly and follow the proper format.
+  </Step>
+  
+  <Step title="Submit a Pull Request">
+    Submit a pull request with a clear description of what you're adding or changing.
+  </Step>
+</Steps>
+
+## Quality Guidelines
+
+- **No Duplicates**: Search the list first to ensure the software isn't already included
+- **Appropriate Category**: Place entries in the most relevant category
+- **Accurate Information**: Ensure all links, licenses, and descriptions are correct
+- **Clear Descriptions**: Write concise, informative descriptions that explain what the software does
+- **Working Links**: All URLs must be functional and point to the correct resources
+
+## Categories and Organization
+
+The list is organized into various categories such as:
+
+- Analytics
+- Automation
+- Backup
+- Blogging Platforms
+- Communication Systems
+- Content Management Systems (CMS)
+- Document Management
+- E-commerce
+- File Transfer & Synchronization
+- Media Streaming
+- Monitoring
+- And many more...
+
+If you're unsure which category is appropriate, choose the most specific category that matches the software's primary function.
+
+## Repository Links
+
+<CardGroup cols={2}>
+  <Card title="GitHub Repository" icon="github" href="https://github.com/awesome-selfhosted/awesome-selfhosted">
+    View the main repository on GitHub
+  </Card>
+  
+  <Card title="Contributing Guidelines" icon="file-lines" href="https://github.com/awesome-selfhosted/awesome-selfhosted-data/blob/master/CONTRIBUTING.md">
+    Read the full contributing guidelines
+  </Card>
+  
+  <Card title="HTML Version" icon="globe" href="https://awesome-selfhosted.net/">
+    Browse the recommended HTML version
+  </Card>
+  
+  <Card title="Report Issues" icon="bug" href="https://github.com/awesome-selfhosted/awesome-selfhosted-data/issues">
+    Report bugs or suggest improvements
+  </Card>
+</CardGroup>
+
+## Community
+
+Join the community to discuss self-hosted software and get help:
+
+- [/r/selfhosted on Reddit](https://old.reddit.com/r/selfhosted/)
+- [/c/selfhosted on Lemmy](https://lemmy.world/c/selfhosted)
+- [Matrix Channel](https://matrix.to/#/#selfhosted:selfhosted.chat)
+
+<Info>
+For questions about contributing, feel free to open an issue on GitHub or reach out through the community channels.
+</Info>
